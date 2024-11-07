@@ -1,0 +1,59 @@
+@media (max-width: 576px){
+    .left-section-inner{
+        figcaption{
+            background-color: $primary-color;
+            position: static!important;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            .figcaption-inner{
+                background-color: $primary-color;
+                padding: 0;
+                border-radius: 0;
+            }
+            
+
+        }
+    } 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+    .login-section{
+        display: block;
+        .left-section{
+            width: 100%;
+            height: auto;
+            .left-section-inner{
+                figure {
+                    img {
+                        height: auto;
+                    }
+                }
+            } 
+
+        }
+        .right-section{
+            width: 100%!important;
+            height: auto;
+        }
+    }
+
+
+
+}
+
+
+

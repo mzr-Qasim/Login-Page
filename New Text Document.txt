@@ -1,0 +1,1 @@
+how to grow image height when the content height grows i gave two divs 50% 50% width in first one is image the second one content
