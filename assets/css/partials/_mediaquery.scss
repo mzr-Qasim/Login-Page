@@ -1,13 +1,12 @@
 @media (max-width: 576px){
     .left-section-inner{
         figcaption{
-            background-color: $primary-color;
+            background-color: $secondary-color;
             position: static!important;
-            padding: 1.5rem 0;
-            display: flex;
-            justify-content: center;
+            padding: 1.5rem 3rem;
             .figcaption-inner{
-                background-color: $primary-color;
+                background-color: $secondary-color;
+                color:$black-color;
                 padding: 0;
                 border-radius: 0;
             }
@@ -15,6 +14,10 @@
 
         }
     } 
+    .right-section{
+        margin-top: 0!important;
+
+    }
 
 
 }
@@ -46,6 +49,7 @@
 
         }
         .right-section{
+            margin-top: 3rem;
             width: 100%!important;
             height: auto;
         }

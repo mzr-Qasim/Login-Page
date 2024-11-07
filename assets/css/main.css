@@ -12144,16 +12144,18 @@ button {
 
 @media (max-width: 576px) {
   .left-section-inner figcaption {
-    background-color: #f5e22c;
+    background-color: #a1c3c6;
     position: static !important;
-    padding: 1.5rem 0;
-    display: flex;
-    justify-content: center;
+    padding: 1.5rem 3rem;
   }
   .left-section-inner figcaption .figcaption-inner {
-    background-color: #f5e22c;
+    background-color: #a1c3c6;
+    color: #000000;
     padding: 0;
     border-radius: 0;
+  }
+  .right-section {
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 992px) {
@@ -12168,6 +12170,7 @@ button {
     height: auto;
   }
   .login-section .right-section {
+    margin-top: 3rem;
     width: 100% !important;
     height: auto;
   }
