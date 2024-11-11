@@ -3,8 +3,13 @@
 @import './partials/base';
 
 
+.main-content{
+    height: 100vh;
+}
+
 
 .login-section{
+    height: 100%;
     display: flex;
     align-items: center;
 
@@ -20,24 +25,27 @@
 
 .left-section-inner{
     position: relative;
+    height: 100%;
     figure{
+        height: 100%;
         img{
             width: 100%;
-            height: 100vh;
+            height: 100%;
             object-fit: cover;
-            z-index: -1;
+
         }
     }
 }
 
 
 .left-section-inner{
+    height: 100%;
         figcaption{
             position: absolute;
-            width: 100%;
-            top: 80%;
-            padding: 0 6rem 0 3rem;
-            transform: translate(0,-50%);
+            width: 80%;
+            bottom: 2rem;
+            left: 2rem;
+
             
 
         }
@@ -54,14 +62,14 @@
 
 .figcaption-inner{
     h2{
-        font-size: calc(1.5rem + 0.25vw);
+        font-size: calc(1.2rem + 0.25vw);
         font-weight: 700;
         padding-bottom: 0.5rem;
     }
     h4{
-        font-size: calc(1.2rem + 0.25vw);
-        font-size: 1.2rem;
+        font-size: calc(1rem + 0.25vw);
         font-weight: 600;
+
     }
 }
 
@@ -75,20 +83,23 @@
 
 .right-section{
     width: 50%;
-    height: 100%;
     padding: 0 3rem;
 }
 
 .right-section-inner{
     color: $black-color;
+
+    
     .title{
+        padding-bottom: 2rem;
         h2{
             padding-bottom: 1rem;
+            font-size: 1.5rem;
             font-weight: 600;
         }
-        h4{
+        p{
             font-weight: 500;
-            font-size: 1.3rem;
+            font-size: 1rem;
             a{
                 color: $black-color;
             }
@@ -99,25 +110,13 @@
 
 
 
-.right-section-inner{
-    .forgot-password{
-        h4{
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-      a{
-        color: $black-color;
-      }
 
-    }
-}
 
 
 
 .form{
-    padding: 4rem 0;
     .form-control {
-        padding: 0.8rem 0.75rem;
+        padding: $form-section-input-padding;
         border: 2px solid var(--bs-border-color);
     }
 }
@@ -125,32 +124,27 @@
 
 
 .form{
-    .forgot-password{
-        h4{
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-      a{
-        color: $black-color;
-      }
 
+    a{
+        color: $black-color;
     }
+
 }
 
 
 
-.right-section-inner{
-    .Log-in{
-        button{
-            width: 100%;
-            padding: 0.8rem 0.75rem;
-            background-color: $primary-color;
-            color: $black-color;
-            border: 0;
-            font-weight: 600
-        }
 
+.right-section-inner{
+    button{
+        width: 100%;
+        padding: $form-section-input-padding;
+        margin-top: 2rem;
+        background-color: $primary-color;
+        color: $black-color;
+        border: 0;
+        font-weight: 500;
     }
+
 }
 
 

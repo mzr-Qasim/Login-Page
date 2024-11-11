@@ -12042,7 +12042,12 @@ button {
   padding-bottom: 6rem;
 }
 
+.main-content {
+  height: 100vh;
+}
+
 .login-section {
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -12054,21 +12059,26 @@ button {
 
 .left-section-inner {
   position: relative;
+  height: 100%;
+}
+.left-section-inner figure {
+  height: 100%;
 }
 .left-section-inner figure img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
 }
 
+.left-section-inner {
+  height: 100%;
+}
 .left-section-inner figcaption {
   position: absolute;
-  width: 100%;
-  top: 80%;
-  padding: 0 6rem 0 3rem;
-  transform: translate(0, -50%);
+  width: 80%;
+  bottom: 2rem;
+  left: 2rem;
 }
 
 .left-section-inner .figcaption-inner {
@@ -12078,87 +12088,64 @@ button {
 }
 
 .figcaption-inner h2, .figcaption-inner .h2 {
-  font-size: calc(1.5rem + 0.25vw);
+  font-size: calc(1.2rem + 0.25vw);
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
 .figcaption-inner h4, .figcaption-inner .h4 {
-  font-size: calc(1.2rem + 0.25vw);
-  font-size: 1.2rem;
+  font-size: calc(1rem + 0.25vw);
   font-weight: 600;
 }
 
 .right-section {
   width: 50%;
-  height: 100%;
   padding: 0 3rem;
 }
 
 .right-section-inner {
   color: #000000;
 }
+.right-section-inner .title {
+  padding-bottom: 2rem;
+}
 .right-section-inner .title h2, .right-section-inner .title .h2 {
   padding-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
-.right-section-inner .title h4, .right-section-inner .title .h4 {
+.right-section-inner .title p {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
-.right-section-inner .title h4 a, .right-section-inner .title .h4 a {
+.right-section-inner .title p a {
   color: #000000;
 }
 
-.right-section-inner .forgot-password h4, .right-section-inner .forgot-password .h4 {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.right-section-inner .forgot-password a {
-  color: #000000;
-}
-
-.form {
-  padding: 4rem 0;
-}
 .form .form-control {
-  padding: 0.8rem 0.75rem;
+  padding: 0.65rem;
   border: 2px solid var(--bs-border-color);
 }
 
-.form .forgot-password h4, .form .forgot-password .h4 {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.form .forgot-password a {
+.form a {
   color: #000000;
 }
 
-.right-section-inner .Log-in button {
+.right-section-inner button {
   width: 100%;
-  padding: 0.8rem 0.75rem;
+  padding: 0.65rem;
+  margin-top: 2rem;
   background-color: #f5e22c;
   color: #000000;
   border: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (max-width: 576px) {
   .left-section-inner figcaption {
-    background-color: #a1c3c6;
-    position: static !important;
-    padding: 1.5rem 3rem;
-  }
-  .left-section-inner figcaption .figcaption-inner {
-    background-color: #a1c3c6;
-    color: #000000;
-    padding: 0;
-    border-radius: 0;
-  }
-  .right-section {
-    margin-top: 0 !important;
+    display: none;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .login-section {
     display: block;
   }
@@ -12170,7 +12157,7 @@ button {
     height: auto;
   }
   .login-section .right-section {
-    margin-top: 3rem;
+    margin: 3rem 0 !important;
     width: 100% !important;
     height: auto;
   }
