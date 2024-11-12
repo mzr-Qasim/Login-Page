@@ -12140,24 +12140,27 @@ button {
   font-weight: 500;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .left-section-inner figcaption {
     display: none;
   }
-}
-@media (max-width: 767px) {
   .login-section {
-    display: block;
+    flex-direction: column;
   }
   .login-section .left-section {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
   }
-  .login-section .left-section .left-section-inner figure img {
-    height: auto;
+  .login-section .left-section-inner figure img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
   }
-  .login-section .right-section {
-    margin: 3rem 0 !important;
+  .right-section {
+    margin: auto;
     width: 100% !important;
     height: auto;
   }
